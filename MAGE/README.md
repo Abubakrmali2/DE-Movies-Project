@@ -5,7 +5,7 @@ In this project we use MAGE as Workflow orchestration, if you are not familure w
 
 ## Installation Steps
 
-1- nstall Mage
+1- install Mage
 ```bash
     pip install mage-ai 
 ```
@@ -13,8 +13,8 @@ In this project we use MAGE as Workflow orchestration, if you are not familure w
 ```bash
     mage start [project_name]
 ```
-3-Open Mage: 
-    Open http://localhost:6789 in your browser.
+3- Open Mage:  
+     Open http://localhost:6789 in your browser.
 
 
 ## The fastest way to get started is by checking out the MAGE documentation here.
