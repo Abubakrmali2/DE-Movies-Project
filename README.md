@@ -54,4 +54,9 @@ In summary, the project addresses the challenges of data ingestion, storage, war
 
 In this project, we utilized the Google Cloud Platform (GCP) to establish essential infrastructure components such as Google Bucket for storage and BigQuery as a data warehousing solution. We employed the Terraform Infrastructure as Code (IaC) tool to facilitate this aspect of the project. For detailed instructions on installing and configuring Terraform, please refer to the link below:
 
+[Terraform](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Terraform/README.md)
+
+
+---
+
 
