@@ -72,4 +72,26 @@ For detailed instructions on installing and configuring MAGE, please refer to th
 
 ---
 
-## DWH
+## Data Warehouse 
+
+In our project, we leverage Google BigQuery as our data warehouse to efficiently store and query ingested data from our data lake. Our optimization strategies focus on partitioning and clustering to enhance query performance and reduce costs.
+
+#### Partitioning:
+
+- Definition: Partitioning divides large datasets into smaller, manageable parts based on specific column values.
+- Implementation: We partition the rating table by the Timestamp column, allowing BigQuery to narrow down data scans to relevant partitions. This minimizes unnecessary data retrieval, resulting in reduced query costs and improved execution time.
+
+#### Clustering:
+
+- Definition: Clustering involves physically ordering data within each partition based on one or more columns.
+- Implementation:
+In the rating table, we cluster data by UserID and MovieID, grouping relevant data together and optimizing query performance.
+Additionally, in the movies table, we employ clustering on the Genres and MovieDate columns. Clustering by Genres facilitates efficient retrieval of movies belonging to the same genre, while clustering by MovieDate ensures that movies released in the same year are stored together. This organization enhances query performance when analyzing movies based on genre or release year, leading to overall cost savings and improved efficiency.
+
+For more detailed information and the queries used to create these optimized tables in BigQuery, refer to the link below.
+
+[BigQuery](https://github.com/Abubakrmali2/DE-Movies-Project/tree/main/BigQuery)
+
+---
+
+## Transfermation
