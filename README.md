@@ -52,11 +52,22 @@ In summary, the project addresses the challenges of data ingestion, storage, war
 
 ## Using the Cloud
 
-In this project, we utilized the Google Cloud Platform (GCP) to establish essential infrastructure components such as Google Bucket for storage and BigQuery as a data warehousing solution. We employed the Terraform Infrastructure as Code (IaC) tool to facilitate this aspect of the project. For detailed instructions on installing and configuring Terraform, please refer to the link below:
+In this project, we utilized the Google Cloud Platform (GCP) to establish essential infrastructure components such as Google Bucket for storage and BigQuery as a data warehousing solution. We employed the Terraform Infrastructure as Code (IaC) tool to facilitate this aspect of the project. 
+
+For detailed instructions on installing and configuring Terraform, please refer to the link below:
 
 [Terraform](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Terraform/README.md)
 
+---
+
+## Data Ingestion
+
+To ingest the data from the MovieLens website, we utilized MAGE to construct an end-to-end pipeline. This pipeline extracted the data from the MovieLens website in the form of a zipped file. Using Python, we then extracted the contents of the zip file, which consisted of three files: movies, ratings, and users. Subsequently, we performed various transformations on these files before uploading them as parquet files to our data lake on Google Cloud Storage.
+
+For detailed instructions on installing and configuring MAGE, please refer to the link below:
+
+[MAGE](https://github.com/Abubakrmali2/DE-Movies-Project/tree/main/MAGE)
 
 ---
 
-
+## DWH
