@@ -1,3 +1,6 @@
+![Terraform](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Images/Terraform.png?Raw=true)
+
+
 # Terraform Configuration
 
 [Terraform](https://www.terraform.io/) is an infrastructure-as-code software tool created by HashiCorp. It allows users to define and provision data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON.
