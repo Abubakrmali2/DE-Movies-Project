@@ -24,7 +24,7 @@ def transform(data, *args, **kwargs):
     dfm=pd.DataFrame(data)
 
 
-    dfm['Date'] = dfm['Title'].str.extract(r'\((\d{4})\)$')
+    dfm['MovieDate'] = dfm['Title'].str.extract(r'\((\d{4})\)$')
     dfm['Title'] = dfm['Title'].str.extract(r'^(.*?)\s*\(\d{4}\)$')
 
 

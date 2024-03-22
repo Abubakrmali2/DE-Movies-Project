@@ -37,7 +37,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - load_users_data_to_gcs
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -53,7 +54,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - load_movies_to_gcs
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -69,7 +71,8 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks: []
+  downstream_blocks:
+  - load_raitings_to_gcs
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -82,6 +85,54 @@ blocks:
   upstream_blocks:
   - extract_rating_data
   uuid: convert_rating_timestamp
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_raitings_to_gcs
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - convert_rating_timestamp
+  uuid: load_raitings_to_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_movies_to_gcs
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - seperate_movie_date
+  uuid: load_movies_to_gcs
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Load_users_data_to_GCS
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - extract_user_data
+  uuid: load_users_data_to_gcs
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -93,7 +144,7 @@ executor_config: {}
 executor_count: 1
 executor_type: null
 extensions: {}
-name: ethereal grace
+name: MovieLens_ETL_Pipline
 notification_config: {}
 remote_variables_dir: null
 retry_config: {}
@@ -103,6 +154,6 @@ settings:
 spark_config: {}
 tags: []
 type: python
-uuid: ethereal_grace
+uuid: movielens_etl_pipline
 variables_dir: /home/kafka/.mage_data/DE-MOVIES
 widgets: []
