@@ -23,8 +23,10 @@ def transform(data, *args, **kwargs):
     # Specify your transformation logic here
     dfm=pd.DataFrame(data)
 
-
-    dfm['MovieDate'] = dfm['Title'].str.extract(r'\((\d{4})\)$')
+    dfm['MovieDate'] =dfm['Title'].str.extract(r'\((\d{4})\)$')
+    dfm['MovieDate'] =pd.to_datetime(dfm['MovieDate'], format='%Y')
+    dfm['MovieDate'] = dfm['MovieDate'].dt.strftime('%Y')
+    #dfm['MovieDate'] = dfm['Title'].str.extract(r'\((\d{4})\)$')
     dfm['Title'] = dfm['Title'].str.extract(r'^(.*?)\s*\(\d{4}\)$')
 
 
