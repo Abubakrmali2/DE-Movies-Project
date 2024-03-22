@@ -1,7 +1,3 @@
-INTRO
-================================================================================
-
-In this project we use MAGE as Workflow orchestration, if you are not familure with MAGE you can follow the below steps to install it.
 
 ## Installation Steps
 
