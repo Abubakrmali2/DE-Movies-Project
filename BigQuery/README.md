@@ -1,6 +1,6 @@
 ![Bigquery](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Images/google-bigquery.png?raw=true)
 
---
+---
 
 In this project, we utilize Google BigQuery as our data warehouse to efficiently store and query ingested data from our data lake stored in Google Cloud Storage. Below are the SQL queries used to create external tables that reference Parquet files and internal tables optimized with partitioning and clustering techniques.
 
