@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: de-movielens-project
+    schema: movies_data
+
+    tables:
+      - name: movie
+      - name: rating
+      - name: user 
