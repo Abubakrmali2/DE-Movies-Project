@@ -1,3 +1,4 @@
+
 ![toolsover](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Images/Tools%20overview-3.png?raw=true)
 
 # MovieLens Data Analysis
@@ -35,7 +36,7 @@ Join us in exploring the fascinating world of movies through data analysis! Let'
 
 ---
 
-## Problem description
+## [Problem description]()
 
 The project aims to solve several key problems related to data engineering and analytics. Here's a description of the problems that the project aims to address:
 
@@ -52,7 +53,7 @@ In summary, the project addresses the challenges of data ingestion, storage, war
 
 ---
 
-## Using the Cloud
+## [Using the Cloud]()
 
 In this project, we utilized the Google Cloud Platform (GCP) to establish essential infrastructure components such as Google Bucket for storage and BigQuery as a data warehousing solution. We employed the Terraform Infrastructure as Code (IaC) tool to facilitate this aspect of the project. 
 
@@ -62,7 +63,7 @@ For detailed instructions on installing and configuring Terraform, please refer 
 
 ---
 
-## Data Ingestion
+## [Data Ingestion]()
 
 To ingest the data from the MovieLens website, we utilized MAGE to construct an end-to-end pipeline. This pipeline extracted the data from the MovieLens website in the form of a zipped file. Using Python, we then extracted the contents of the zip file, which consisted of three files: movies, ratings, and users. Subsequently, we performed various transformations on these files before uploading them as parquet files to our data lake on Google Cloud Storage.
 
@@ -72,7 +73,7 @@ For detailed instructions on installing and configuring MAGE, please refer to th
 
 ---
 
-## Data Warehouse 
+## [Data Warehouse]() 
 
 In our project, we leverage Google BigQuery as our data warehouse to efficiently store and query ingested data from our data lake. Our optimization strategies focus on partitioning and clustering to enhance query performance and reduce costs.
 
@@ -94,4 +95,6 @@ For more detailed information and the queries used to create these optimized tab
 
 ---
 
-## Transfermation
+## [Data Transfermation]()
+
+---
