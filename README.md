@@ -97,4 +97,10 @@ For more detailed information and the queries used to create these optimized tab
 
 ## [Data Transfermation]()
 
+After uploading our data to the data warehouse in the previous step, we proceed with the necessary transformations. In this project, we utilize dbt (data build tool) to construct a model that aggregates data from the data warehouse. This model performs essential transformations, including joins and data manipulations, to construct a comprehensive rating table. The rating table consolidates all relevant data required for building visualizations and conducting further analysis, serving as a key component in our data analytics pipeline.
+
+For more details about the dbt and our model, please follow the link below.
+
+[dbt](https://github.com/Abubakrmali2/DE-Movies-Project/tree/dbt_model_branch/dbt)
+
 ---
