@@ -115,7 +115,7 @@ In the final step of our project, we constructed a comprehensive dashboard using
 
 - Rating Distribution: The majority of ratings fall within the 4 out of 5 range, suggesting that most viewers tend to rate movies positively. This distribution highlights the overall satisfaction level among the audience.
 
-- Top-Rated Movie: The top-rated movie in our dataset is "American Beauty," indicating its exceptional quality and popularity among viewers.
+- Top-Rated Movie: The top-rated movie in our dataset from the perspective of both count of ratings and the average rating itself is "American Beauty," indicating its exceptional quality and popularity among viewers.
 
 Explore the dashboard further to gain deeper insights and visualizations from the below link:
 
