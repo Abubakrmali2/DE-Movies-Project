@@ -104,3 +104,25 @@ For more details about the dbt and our model, please follow the link below.
 [dbt](https://github.com/Abubakrmali2/DE-Movies-Project/tree/dbt_model_branch/dbt)
 
 ---
+
+## [The Dashboard Analysis]()
+
+In the final step of our project, we constructed a comprehensive dashboard using Google Data Studio (Looker Studio). Through this dashboard, we've uncovered some insightful findings about our dataset:
+
+- Genre Insights: The most prevalent genre in our dataset is Drama movies, indicating a significant presence and popularity of this genre among viewers.
+
+- Yearly Analysis: Among all the years in our dataset, 1998 stands out as the richest year for movie releases, with a total of 317 movies released. This insight provides valuable historical context about the film industry's productivity and trends.
+
+- Rating Distribution: The majority of ratings fall within the 4 out of 5 range, suggesting that most viewers tend to rate movies positively. This distribution highlights the overall satisfaction level among the audience.
+
+- Top-Rated Movie: The top-rated movie in our dataset is "American Beauty," indicating its exceptional quality and popularity among viewers.
+
+Explore the dashboard further to gain deeper insights and visualizations from the below link:
+
+
+![Dashboard](https://github.com/Abubakrmali2/DE-Movies-Project/blob/main/Images/Dashboard.png)
+
+
+[Link to Dashboard](https://lookerstudio.google.com/reporting/ed944180-5d15-412c-bae1-5931eabd8be7)
+
+
